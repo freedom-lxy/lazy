@@ -1,0 +1,135 @@
+.read{
+    width: 100%;
+    height: 100vh; 
+}
+.head{
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 110;
+    .return{
+        position: fixed;
+        top: 0.18rem;
+        left: 0.3rem;
+        height: 0.5rem;
+        z-index: 12;   
+    }
+}
+.read_foot{
+    width: 100%;
+    height: 1.6rem;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    bottom: 0;
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    .chapter{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        height: 0.8rem;
+        font-size: 0.38rem;
+    }
+}
+.read_setting{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #eee;
+    font-size: 0.28rem;
+    padding: 0.1rem 0.2rem;
+    box-sizing: border-box;
+    li{
+        display: flex;
+        margin: 0.2rem 0;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        box-sizing: border-box;
+        p{
+            flex: 1;
+        }
+        ul,.read_bg{
+            display: flex;
+            -webkit-box-flex: 6;
+            flex: 6;
+            li{
+                border: 0.02rem solid #666;
+                box-sizing: border-box;
+                text-align: center;
+                display: block;
+                margin: 0;
+            }
+            .font_minus,.font_add{
+                width: 2.3rem;
+            }
+            .font_now{
+                width: 1.2rem;
+            }
+            .uCenInBlock{
+                border-radius: 50%;
+                width: 0.5rem;
+                margin-right: 0.2rem;
+                box-sizing: border-box;
+            }
+        }
+        
+    }
+}
+
+.textcontent{
+    overflow: auto;
+    height: 100%;
+}
+.read_text{
+    li{
+        padding: 0 0.2rem;
+        line-height: 0.6rem;
+        text-indent: 2em;
+    }
+    .text_title{
+        font-weight: 700;
+        text-indent: 0;
+        font-size: 0.38rem;
+    }
+    .book_text{
+        font-size: 0.38rem;
+    }
+}
+.chapterall{
+    position: relative;
+    width: 80vw;
+    height: 10rem;
+    overflow: auto;
+    margin: 0 auto;
+    p{
+        position: fixed;
+        top: 0.5rem;
+        width: 80%;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        text-align: center;
+        background: #fff;
+        border-bottom: 0.02rem solid #dedede;
+        box-sizing: border-box;
+        font-size: 0.3rem;
+        color:#000;
+    }
+    ul{
+        margin-top: 0.6rem;
+        li{
+            width: 100%;
+            padding: 0.2rem;
+            border-bottom: 0.02rem solid #dedede;
+            box-sizing: border-box;
+            font-size: 0.3rem;
+            color:#000;
+            text-align-last: left;
+        }
+    }
+}

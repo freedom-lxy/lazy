@@ -1,0 +1,46 @@
+.magnifying{
+    position: fixed;
+    top: 0.18rem;
+    right: 0.3rem;
+    height: 0.5rem;
+    z-index: 12;   
+}
+.return{
+    position: fixed;
+    top: 0.18rem;
+    left: 0.3rem;
+    height: 0.5rem;
+    z-index: 12;   
+}
+.cata_head{
+    position: fixed;
+    top: 0.9rem;
+    padding: 0.3rem 0.2rem 0.2rem;
+    width: 100%;
+    background: #fff;
+    font-size: 0.38rem;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.cate_content{
+    margin-top: 0.9rem;
+    padding: 0.1rem 0.2rem;
+    box-sizing: border-box;
+    .cata_ul{
+        margin-top: 0.1rem;
+        background: #fff;
+        padding: 0 0.2rem;
+        box-sizing: border-box;
+        .cata_list{
+            height: 0.8rem;
+            line-height: 0.8rem;
+            border-bottom: 1px solid #ccc;
+            color: #464646;
+            font-size: 0.34rem;
+            box-sizing: border-box;
+        }
+    }
+
+}

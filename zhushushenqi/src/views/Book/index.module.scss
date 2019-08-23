@@ -1,0 +1,174 @@
+.book{
+    padding-bottom: 0.8rem;
+}
+
+.magnifying{
+    position: fixed;
+    top: 0.18rem;
+    right: 0.3rem;
+    height: 0.5rem;
+    z-index: 12;   
+}
+.return{
+    position: fixed;
+    top: 0.18rem;
+    left: 0.3rem;
+    height: 0.5rem;
+    z-index: 12;   
+}
+.book_head{
+    width: 100%;
+    height: 3rem;
+    background: url("../../assets/img/headbg.jpg") no-repeat;
+    background-size: cover;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    display: flex;
+    .book_img{
+        height: 100%;
+        .uImgAuto{
+            width: auto;
+            max-width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+    .book_title{
+        flex:1;
+        text-align: right;
+        line-height: 0.4rem;
+        .book_name{
+            font-size: 0.38rem;
+            margin: 0.25rem 0;
+            font-weight: 700;
+        }
+        .book_author{
+            font-size: 0.3rem;
+            margin: 0.05rem;
+        }
+    }
+}
+.book_frame{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    background: #fff;
+    font-size: 0.3rem;
+    .lastChapter{
+        width: 100%;
+        margin: 0.1rem 0;
+        span{
+            color: #3dbafd;
+        }
+    }
+    .book_longIntro {
+        text-indent: 2em;
+      }
+    
+} 
+.catalog{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0.2rem;
+    padding: 0 0.2rem;
+    background: #fff;
+    display: block;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    overflow: hidden;
+    .frame_title::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0.04rem;
+        height: 0.7rem;
+        background: #eb2d4a;
+        left: 0;
+    }
+    P{
+        float: left;
+        font-size: 0.3rem;
+    }
+    span{
+        float: right;
+        font-size: 0.28rem;
+        color: #9a9a9a;
+    }
+}
+.book_relation{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    background: #fff;
+    font-size: 0.3rem;
+    .frame_title::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0.04rem;
+        height: 0.7rem;
+        background: #eb2d4a;
+        left: 0;
+    }
+    .frame_title{
+        line-height: 0.7rem;
+    }
+    ul{
+        
+        overflow: hidden;
+        margin: 0.2rem  0.2rem 0;
+       
+        li{
+            float: left;
+            width: 30%;
+            margin-left: 0.2rem;
+            margin-bottom: 0.2rem;
+            p{
+                width: 30%;
+                width: 1.6rem;
+                margin-top: 0.2rem;
+            }
+            .relation_img{
+                height: 2.2rem;
+                width: 1.6rem;
+                .uImgAuto{
+                    width: auto;
+                    max-width: 100%;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+            }
+            .txt_ellipsis{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+            }
+        }
+    }
+}
+.bottom{
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    position: fixed;
+    bottom: -0.01rem;
+    left: 0;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 0 0.1rem 0.05rem #dedede;
+    button{
+        width: 50%;
+        font-size: 0.30rem;
+        border: 0;
+        outline: none;
+        background: #fff;
+    }
+    .reade{
+        background: #3dbafd;
+        color: #ffffff;
+    }
+}

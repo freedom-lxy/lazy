@@ -1,0 +1,195 @@
+.home{
+    padding-bottom: 1rem;
+    // background-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
+    height: calc(100vh - 1rem);
+    
+}
+.top{
+    width: 100%;
+    height: 0.9rem;
+    background: #ffffff;
+    position: static;
+    top: 0;
+    z-index: 110;
+    -webkit-box-shadow: 0 0 0.1rem 0rem #9a9a9a;
+    box-shadow: 0 0 0.1rem 0rem #9a9a9a;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+    div{
+        font-size: 0.38rem;
+        font-weight: bold;
+        font-family: KaiTi;
+        line-height: 0.9rem;
+    }
+    .userimg{
+        width: 0.4rem;
+        height: 0.4rem;
+        align-self: center;
+    }
+}
+.Booklist{
+  p{
+    text-align: center;
+    color: #464646;
+    font-size: 0.28rem;
+    margin-top: 1rem;
+  }
+}
+.model{
+  width: 60%;
+  height: 100%;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: #f4f4f4;
+    .user {
+        padding: 0.6rem 0.2rem 0;
+        height: 2.8rem;
+        font-size: 0.38rem;
+        background: url("../../assets/img/menubg.jpg");
+        color: #ffffff;
+      p {
+        text-align: center;
+      }
+      .uImgAuto{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border: 0.02rem solid #9a9a9a;
+      }
+    }
+    .userInfo {
+        padding: 0.1rem 0.2rem;
+      li {
+        height: 0.8rem;
+        line-height: 0.8rem;
+        font-size: 0.3rem;
+        display: flex;
+        margin-left:25%; 
+        p{
+          font-size: 0.26rem;
+          color: #000;
+        }
+        img{
+          width: 0.48rem;
+          height: 0.48rem;
+          align-self: center;
+        }
+      }
+    }
+  }
+  .editBtn{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    box-shadow: 0 0 0.1rem 0.05rem #ccc;
+    background: #ffffff;
+    display: flex;
+    z-index: 11;
+    button{
+      display: block;
+      width: 50%;
+      height: 100%;
+      text-align: center;
+      font-size: 0.28rem;
+      color: #fff;
+      border: 0;
+      background-color: transparent;
+      outline: none;
+      background: #eb2d4a;
+      &:first-child {
+        border-right: 0.02rem solid #dedede;
+        color: #333;
+        background-color: #fff;
+      }
+    }
+  }
+  .Booklist{
+    overflow: auto;
+    background: #fff;
+    // height: calc(100vh - 0.9rem);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0.4rem 0.4rem 1rem 0.4rem;
+    box-sizing: border-box;
+    margin-top: 0.1rem;
+    z-index: 11;
+    .p{
+      margin-left:1.3rem;
+      align-self: center;
+      
+    }
+    .book{
+      position: relative;
+      width: 33.0%;
+      height: 2.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .img{
+        height: 2.2rem;
+        width: 1.54rem;
+        border-radius: 0.1rem;
+        overflow: hidden;
+        .uIimgAuto{
+          width: auto;
+          max-width: 100%;
+          height: 100%;
+          vertical-align: middle;
+        }
+      }
+      p{
+        margin-top: 0.1rem;
+        text-align: center;
+        font-size: 0.24rem;
+        width: 1.54rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      }
+      .del{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .mask{
+          width: 1.54rem;
+          margin-left: 0.34rem;
+          height: 2.2rem;
+          background: rgba(0, 0, 0, 0.5);
+          border-radius: 0.1rem;;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          span{
+            width: 0.5rem;
+            height: 0.5rem;
+            border: 0.02rem solid #9a9a9a;
+            border-radius: 50%;
+            img{
+              color: #fff;
+              width: 0.5rem;
+              height: 0.5rem;
+              display: none;
+            }
+            .sel{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }

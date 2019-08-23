@@ -1,0 +1,77 @@
+
+.search_list{
+    position: relative;
+    width: 100%;
+    height: 0.6rem;
+    padding: 0rem 0.2rem;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+    .input {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 0.2rem;
+        font-size: 0.26rem;
+        text-indent: 0.2rem;
+        padding: 0 0.6rem 0 0;
+        border: 1px solid #DBDBDB;
+    }
+    .magnifying{
+        position: absolute;
+        top: 0.05rem;
+        right: 0.8rem;
+        height: 0.5rem;
+    }
+    .delimg{
+        position: absolute;
+        top:0.06rem;
+        right: 0.3rem;
+        width: 0.5rem;
+        }
+}
+.searchlist{
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    overflow: auto;
+    height: 8.7rem;
+    .search_li{
+        background: #fff;
+        height: 2.5rem;
+        margin-bottom: 0.2rem;
+        display: flex;
+        .list_img{
+            height: 100%;
+            width: 1.75rem;
+            .booksimg{
+                width: auto;
+                max-width: 100%;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+        .list_info{
+            flex: 1;
+            padding: 0.1rem;
+            line-height: 0.4rem;
+            .list_title{
+                font-size: 0.34rem;
+                font-weight: 700;
+            }
+            .list_autho{
+                padding: 0;
+                margin: 0;
+                border: 0;
+                box-sizing: border-box;
+                font-size: 0.32rem;
+            }
+            .list_shortIntro{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+                font-size: 0.32rem;
+            }
+        }
+    }
+}
