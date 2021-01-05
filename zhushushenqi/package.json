@@ -5,7 +5,7 @@
   "homepage": ".",
   "dependencies": {
     "antd-mobile": "^2.2.14",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "path": "^0.12.7",
     "react": "^16.9.0",
